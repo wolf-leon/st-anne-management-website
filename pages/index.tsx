@@ -53,21 +53,39 @@ const showcase = [
   },
 ];
 
+const testimonials = [
+  {
+    quote:
+      "The two brothers, Swinton and Moses, work fabulously together and ensure every event is handled professionally with amazing sound, lighting, and coordination.",
+    label: "21st birthday celebration",
+  },
+  {
+    quote:
+      "Whatever idea I have, you will always find a way to make it happen. You brought the whole vision to life so beautifully. Truly appreciate you and your team.",
+    label: "First birthday celebration",
+  },
+  {
+    quote:
+      "The arrangements, coordination, decor, and overall management were seamless, allowing us to enjoy the occasion without worrying about the details.",
+    label: "Private event",
+  },
+];
+
 export default function IndexPage() {
   return (
     <DefaultLayout>
       <section className="relative overflow-hidden py-8 md:py-14">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top_right,rgba(251,146,60,0.2),transparent_28%),radial-gradient(circle_at_bottom_left,rgba(59,130,246,0.12),transparent_25%)]" />
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-          <div>
+          <div className="text-center lg:text-left">
             <span className="inline-flex items-center rounded-full border border-orange-400/30 bg-orange-500/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.24em] text-orange-200">
               Wedding & Event Experts
             </span>
-            <h1 className="mt-6 max-w-xl text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">
+            <h1 className="mx-auto mt-6 max-w-xl text-4xl font-black tracking-tight text-white sm:text-5xl lg:mx-0 lg:text-6xl">
               Complete event solutions from{" "}
               <span className="text-orange-400">planning to execution.</span>
             </h1>
-            <p className="mt-5 max-w-lg text-lg leading-8 text-slate-300">
+            <p className="mx-auto mt-5 max-w-lg text-lg leading-8 text-slate-300 lg:mx-0">
               We are wedding and event planning experts offering complete event
               solutions for weddings, corporate events, private celebrations,
               and special occasions. From concept to final setup, we manage
@@ -83,7 +101,7 @@ export default function IndexPage() {
               </NextLink>
               <NextLink
                 className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-white/30 hover:bg-white/10"
-                href="/#portfolio"
+                href="/portfolio"
               >
                 View portfolio
               </NextLink>
@@ -141,22 +159,34 @@ export default function IndexPage() {
       </section>
 
       <section className="py-16 md:py-20" id="services">
-        <div className="mb-8 max-w-2xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-orange-300">
-            Our services
-          </p>
-          <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
-            Full-service planning and production for memorable occasions.
-          </h2>
+        <div className="mb-10 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+          <div className="mx-auto max-w-2xl text-center md:mx-0 md:text-left">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-orange-300">
+              Our services
+            </p>
+            <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
+              Everything your event needs, in one trusted team.
+            </h2>
+            <p className="mt-4 leading-7 text-slate-300">
+              From the first idea to the final guest leaving, we bring the
+              people, planning, and production together.
+            </p>
+          </div>
+          <NextLink
+            className="self-center text-sm font-semibold text-orange-200 transition-colors hover:text-white md:self-auto"
+            href="/services"
+          >
+            Explore all services →
+          </NextLink>
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.title}
-              className="rounded-3xl border border-white/10 bg-white/5 p-6 transition-transform hover:-translate-y-1"
+              className="flex min-h-64 flex-col rounded-3xl border border-white/10 bg-white/5 p-6 text-center transition-transform hover:-translate-y-1 md:text-left"
             >
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-amber-400 text-lg font-bold text-slate-950">
+              <div className="mx-auto mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-orange-500 to-amber-400 text-lg font-bold text-slate-950 md:mx-0">
                 0{services.indexOf(service) + 1}
               </div>
               <h3 className="text-xl font-semibold text-white">
@@ -165,18 +195,24 @@ export default function IndexPage() {
               <p className="mt-3 text-sm leading-7 text-slate-300">
                 {service.description}
               </p>
+              <NextLink
+                className="mt-auto pt-6 text-sm font-semibold text-orange-200 hover:text-white"
+                href="/services"
+              >
+                See how we help →
+              </NextLink>
             </div>
           ))}
         </div>
       </section>
 
       <section className="grid gap-8 py-8 md:grid-cols-[0.9fr_1.1fr] md:py-16">
-        <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900 to-slate-800 p-8">
+        <div className="rounded-[2rem] border border-orange-400/20 bg-gradient-to-br from-orange-500/10 via-slate-900 to-slate-800 p-8">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-orange-300">
             Why choose us
           </p>
-          <h3 className="mt-4 text-3xl font-bold text-white">
-            Thoughtful planning. Flawless execution.
+          <h3 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
+            A calm team behind every moving part.
           </h3>
           <div className="mt-8 space-y-4">
             {process.map((step) => (
@@ -193,7 +229,7 @@ export default function IndexPage() {
           </div>
         </div>
 
-        <div className="rounded-[2rem] border border-white/10 bg-slate-900/80 p-8">
+        <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 text-center md:text-left">
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
               <p className="text-sm text-slate-400">Average planning lead</p>
@@ -215,23 +251,69 @@ export default function IndexPage() {
         </div>
       </section>
 
+      <section className="py-16 md:py-20" id="testimonials">
+        <div className="mb-8 flex flex-col gap-4 text-center md:items-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.24em] text-orange-300">
+            Kind words
+          </p>
+          <h2 className="max-w-2xl text-3xl font-bold text-white sm:text-4xl">
+            Celebrations remembered by the people who lived them.
+          </h2>
+          <p className="mx-auto max-w-xl leading-7 text-slate-300">
+            The best measure of our work is how confidently our clients return
+            to us for their next celebration.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          {testimonials.map((testimonial) => (
+            <figure
+              key={testimonial.label}
+              className="min-w-0 rounded-[2rem] border border-white/10 bg-white/5 p-6"
+            >
+              <blockquote className="break-words text-base leading-7 text-slate-200">
+                &quot;{testimonial.quote}&quot;
+              </blockquote>
+              <figcaption className="mt-5 text-xs font-semibold uppercase tracking-[0.16em] text-orange-300">
+                Client testimonial · {testimonial.label}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+
+        <div className="mt-8 flex justify-center">
+          <NextLink
+            className="inline-flex items-center justify-center rounded-full border border-orange-400/30 bg-orange-500/10 px-6 py-3 text-sm font-semibold text-orange-200 transition-colors hover:border-orange-300 hover:bg-orange-500/15"
+            href="/services#testimonials"
+          >
+            Read more testimonials
+          </NextLink>
+        </div>
+      </section>
+
       <section className="py-16 md:py-20" id="portfolio">
-        <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div>
+        <div className="mb-8 flex flex-col gap-4 text-center md:flex-row md:items-end md:justify-between md:text-left">
+          <div className="mx-auto md:mx-0">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-orange-300">
               Portfolio
             </p>
             <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
-              Work that speaks before a word is said.
+              See the atmosphere we create.
             </h2>
           </div>
+          <NextLink
+            className="self-center text-sm font-semibold text-orange-200 transition-colors hover:text-white md:self-auto"
+            href="/portfolio"
+          >
+            Open full portfolio →
+          </NextLink>
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
           {showcase.map((item) => (
             <article
               key={item.title}
-              className="group overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900"
+              className="group overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900 transition-transform hover:-translate-y-1"
             >
               <div className="overflow-hidden">
                 <img
@@ -240,7 +322,7 @@ export default function IndexPage() {
                   src={item.image}
                 />
               </div>
-              <div className="p-5">
+              <div className="p-5 text-center md:text-left">
                 <p className="text-xs uppercase tracking-[0.24em] text-orange-300">
                   {item.tag}
                 </p>
@@ -255,22 +337,23 @@ export default function IndexPage() {
         <div className="mt-8 flex justify-center md:justify-start">
           <NextLink
             className="inline-flex items-center justify-center rounded-full border border-orange-400/30 bg-orange-500/10 px-6 py-3 text-sm font-semibold text-orange-200 transition-colors hover:border-orange-300 hover:bg-orange-500/15"
-            href="/about"
+            href="/portfolio"
           >
-            Explore more
+            View full portfolio
           </NextLink>
         </div>
       </section>
 
       <section className="py-16 md:py-20">
-        <div className="rounded-[2rem] border border-orange-400/20 bg-gradient-to-r from-orange-500/10 via-slate-900 to-slate-900 p-8 md:p-10">
+        <div className="rounded-[2rem] border border-orange-400/30 bg-gradient-to-r from-orange-500/15 via-slate-900 to-slate-900 p-8 shadow-2xl shadow-orange-500/5 md:p-10">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div className="max-w-xl">
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-orange-300">
                 Let’s build your next moment
               </p>
               <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
-                Ready to host an event that feels premium from start to finish?
+                Let&apos;s make your next event feel effortless from start to
+                finish.
               </h2>
             </div>
             <NextLink
@@ -284,7 +367,7 @@ export default function IndexPage() {
       </section>
 
       <section className="pb-16 md:pb-20">
-        <div className="mb-8 max-w-2xl">
+        <div className="mx-auto mb-8 max-w-2xl text-center md:mx-0 md:text-left">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-orange-300">
             Quick contact
           </p>

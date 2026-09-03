@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "St. Anne Management",
+  name: "St. Anne Event Management",
   description:
     "Modern event management and production company creating unforgettable corporate and private experiences.",
   baseLocation: "Goa, India",
@@ -25,11 +25,11 @@ export const siteConfig = {
     },
     {
       label: "Services",
-      href: "/#services",
+      href: "/services",
     },
     {
       label: "Portfolio",
-      href: "/#portfolio",
+      href: "/portfolio",
     },
     {
       label: "Articles",
@@ -55,11 +55,11 @@ export const siteConfig = {
     },
     {
       label: "Services",
-      href: "/#services",
+      href: "/services",
     },
     {
       label: "Portfolio",
-      href: "/#portfolio",
+      href: "/portfolio",
     },
     {
       label: "Articles",

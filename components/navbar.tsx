@@ -3,7 +3,6 @@ import NextLink from "next/link";
 import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
-import { Logo } from "@/components/icons";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,12 +12,14 @@ export const Navbar = () => {
       <header className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4">
           <NextLink className="flex items-center gap-3" href="/">
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-amber-400 via-orange-500 to-rose-500 text-slate-950 shadow-lg shadow-orange-500/30">
-              <Logo size={22} />
-            </span>
+            <img
+              alt="St. Anne Event Management logo"
+              className="h-10 w-16 object-contain"
+              src="/company-logo.png"
+            />
             <div>
               <p className="text-lg font-semibold tracking-wide text-white">
-                St. Anne
+                St. Anne Event
               </p>
               <p className="text-[10px] uppercase tracking-[0.28em] text-slate-400">
                 Management

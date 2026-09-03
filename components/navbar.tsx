@@ -13,13 +13,13 @@ export const Navbar = () => {
         <div className="flex items-center gap-4">
           <NextLink className="flex items-center gap-3" href="/">
             <img
-              alt="St. Anne Event Management logo"
+              alt="St. Ann Event Management logo"
               className="h-10 w-16 object-contain"
               src="/company-logo.png"
             />
             <div>
               <p className="text-lg font-semibold tracking-wide text-white">
-                St. Anne Event
+                St. Ann Event
               </p>
               <p className="text-[10px] uppercase tracking-[0.28em] text-slate-400">
                 Management

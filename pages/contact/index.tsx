@@ -104,7 +104,7 @@ export default function ContactPage() {
         <section className="mt-16 rounded-[2rem] border border-white/10 bg-gradient-to-br from-slate-900 to-slate-800 p-8 md:p-10">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-orange-300">
-              Why St. Anne Event Management Company
+              Why St. Ann Event Management Company
             </p>
             <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
               The calm, capable team behind remarkable events.

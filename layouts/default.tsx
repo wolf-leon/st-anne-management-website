@@ -30,15 +30,14 @@ export default function DefaultLayout({
         <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.3fr_0.8fr_0.9fr_1.2fr] lg:px-8">
           <div>
             <div className="mb-5 flex items-center gap-3">
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-orange-500 to-amber-400 text-sm font-bold text-slate-950">
-                SA
-              </span>
-              <div>
-                <p className="text-lg font-semibold text-white">St. Anne</p>
-                <p className="text-[10px] uppercase tracking-[0.28em] text-slate-400">
-                  Management
-                </p>
-              </div>
+              <img
+                alt="St. Ann Event Management logo"
+                className="h-10 w-16 object-contain"
+                src="/company-logo.png"
+              />
+              <p className="text-lg font-semibold text-white">
+                St Ann Event Management
+              </p>
             </div>
             <p className="max-w-sm text-sm leading-7 text-slate-300">
               We design thoughtful corporate and private experiences that feel
@@ -152,7 +151,7 @@ export default function DefaultLayout({
 
         <div className="border-t border-white/10">
           <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-sm text-slate-400 sm:flex-row sm:px-6 lg:px-8">
-            <p>© {currentYear} St. Anne Management. All rights reserved.</p>
+            <p>© {currentYear} St. Ann Management. All rights reserved.</p>
             <p>
               Based in {siteConfig.contact.location} • Crafting moments that
               move people.

@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "St. Anne Event Management",
+  name: "St. Ann Event Management",
   description:
     "Modern event management and production company creating unforgettable corporate and private experiences.",
   baseLocation: "Goa, India",
@@ -80,7 +80,7 @@ export const siteConfig = {
       "mailto:stanneventsgoa@gmail.com?subject=Event%20Organisation%20Inquiry&body=Hi%20St%20Ann%20Event%20Company%2C%20I%20would%20Like%20to%20Discuss%20a%20Event%20organisation%20with%20you%21",
     phone: "tel:+919823815005",
     instagram: "https://www.instagram.com/st.ann_events_x/",
-    google: "https://www.google.com/search?q=St.%20Anne%20Event%20Company",
+    google: "https://www.google.com/search?q=St.%20Ann%20Event%20Company",
     whatsapp:
       "https://wa.me/919823815005?text=Hi%20St%20Ann%20Event%20Company%2C%20I%20would%20Like%20to%20Discuss%20a%20Event%20organisation%20with%20you%21",
     whatsappMessage:

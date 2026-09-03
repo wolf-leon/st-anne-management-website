@@ -125,12 +125,12 @@ export default function IndexPage() {
             <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900/80 p-3 shadow-2xl shadow-orange-500/10">
               <div className="absolute left-6 top-6 z-10 flex items-center gap-3 rounded-full border border-white/10 bg-slate-950/75 px-4 py-2 shadow-lg backdrop-blur-md">
                 <img
-                  alt="St. Anne Management logo"
+                  alt="St. Ann Management logo"
                   className="h-10 w-10 rounded-full object-cover"
                   src="/company-logo.png"
                 />
                 <div>
-                  <p className="text-sm font-semibold text-white">St. Anne</p>
+                  <p className="text-sm font-semibold text-white">St. Ann</p>
                   <p className="text-[9px] uppercase tracking-[0.25em] text-slate-400">
                     Management
                   </p>

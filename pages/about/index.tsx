@@ -24,10 +24,10 @@ export default function AboutPage() {
             Our story
           </p>
           <h1 className="mt-4 text-4xl font-black tracking-tight text-white sm:text-6xl">
-            Remembering our Dad
+            About our Founder
           </h1>
           <p className="mt-3 text-xl font-medium text-orange-200">
-            Francisco Paulo Rodrigues 🕊️
+            Francisco Paulo Rodrigues 🌟
           </p>
         </div>
 
@@ -36,36 +36,45 @@ export default function AboutPage() {
             <img
               alt="Francisco Paulo Rodrigues with his sons"
               className="aspect-[4/5] h-auto w-full rounded-[1.6rem] bg-white object-contain"
-              src="/Team.png"
+              src="/Team-2.jpeg"
             />
           </div>
 
           <div className="max-w-2xl text-center text-lg leading-8 text-slate-300 sm:text-left">
-            <p>
-              Six years have passed since we lost you, Dad, but your memory
-              remains forever in our hearts. 🤍
+            <p className="font-medium text-white">
+              Every great journey begins with a small dream.
             </p>
             <p className="mt-5">
-              You were not only a loving father, but also the founder and vision
-              behind St. Ann Events. Your passion, dedication, and hard work
-              built a legacy that continues to live on.
+              Our founder, Francisco Paulo Rodrigues, started his journey with
+              nothing more than a small loudspeaker, simple decorations, and a
+              few lights. From humble beginnings, he slowly built his passion
+              into a name that became a part of countless celebrations.
             </p>
             <p className="mt-5">
-              We miss your presence, your guidance, and your loving smile.
-              Though you are no longer by our side, everything you taught us and
-              everything you built will always remain with us.
+              He worked tirelessly, day and night, providing sound, lights, and
+              decorations for local weddings and events. He also proudly
+              provided sound and lighting services for Hindu festivals and
+              Zatras, bringing his dedication and professionalism to every
+              celebration, regardless of its size.
             </p>
-            <p className="mt-5 font-medium text-white">
-              Gone from our sight, but never from our hearts.
+            <p className="mt-5">
+              Behind every event was his hard work, determination, and countless
+              sacrifices. He believed in giving his best, even when the work was
+              difficult and the hours were long.
             </p>
-            <p className="mt-5 text-orange-200">
-              Forever loved. Forever missed. Forever our Dad. 🕯️❤️
+            <p className="mt-5">
+              Today, Francisco Paulo Rodrigues is no longer with us, but the
+              legacy he built continues to live on through every event, every
+              light, every sound, and every celebration we are a part of.
             </p>
-            <p className="mt-6 text-base font-semibold uppercase tracking-[0.16em] text-slate-400">
-              St. Ann Events
-              <span className="mt-2 block normal-case tracking-normal text-slate-300">
-                Honouring Dad&apos;s vision. Continuing his legacy. ❤️
-              </span>
+            <p className="mt-5">
+              We remember him not only as our founder, but as a man who started
+              small, dreamed big, worked hard, and built something that
+              continues to inspire us.
+            </p>
+            <p className="mt-6 font-medium text-orange-200">
+              With gratitude, love, and respect — always remembered, never
+              forgotten.
             </p>
           </div>
         </div>
@@ -79,10 +88,13 @@ export default function AboutPage() {
               A family legacy in the hands of his sons
             </h2>
             <p className="mt-5 text-lg leading-8 text-slate-300">
-              Today, St. Ann Events is run by brothers Swinton Rodrigues and
-              Moses Rodrigues. Together, they carry their father&apos;s vision
-              forward with the same passion, care, and dedication he gave to
-              every event.
+              Today, St. Ann Events is proudly carried forward by brothers
+              Swinton Rodrigues and Moses Rodrigues.
+            </p>
+            <p className="mt-5 text-lg leading-8 text-slate-300">
+              For Swinton and Moses, it is their father&apos;s dream, their
+              family&apos;s journey, and a legacy they are proud to carry
+              forward.
             </p>
           </div>
           <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900/80 p-3">
